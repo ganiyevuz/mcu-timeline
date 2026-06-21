@@ -1,0 +1,48 @@
+name: Refresh MCU data
+
+# Pulls fresh data from TMDB (posters, ratings, runtimes, release dates,
+# IMDb ids, synopses) into mcu-data.json once a day. If anything changed,
+# it commits the update — which triggers the Vercel production deploy.
+# Needs a repo secret: TMDB_API_KEY
+
+on:
+  schedule:
+    - cron: "17 6 * * *"   # daily at 06:17 UTC
+  workflow_dispatch:        # allow manual runs from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Refresh data from TMDB
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+        run: node refresh-data.mjs
+
+      - name: Commit if data changed
+        run: |
+          if [[ -n "$(git status --porcelain mcu-data.json)" ]]; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add mcu-data.json
+            git commit -m "chore: refresh TMDB data ($(date -u +%Y-%m-%d))"
+            git push
+            echo "✅ mcu-data.json updated."
+          else
+            echo "No changes — data already up to date."
+          fi
