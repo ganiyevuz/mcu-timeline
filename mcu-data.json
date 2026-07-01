@@ -151,7 +151,7 @@
       "tmdbId": 24428,
       "universe": "Marvel Cinematic Universe",
       "universeLabel": "MCU",
-      "rating": 8,
+      "rating": 8.1,
       "imdbId": "tt0848228",
       "overview": "When an unexpected enemy emerges and threatens global safety and security, Nick Fury, director of the international peacekeeping agency known as S.H.I.E.L.D., finds himself in need of a team to pull the world back from the brink of disaster. Spanning the globe, a daring recruitment effort begins!"
     },
@@ -804,7 +804,7 @@
       "phase": 6,
       "saga": "Multiverse Saga",
       "type": "film",
-      "meta": "140 min",
+      "meta": "144 min",
       "tint": "#9b1c2e",
       "focus": "Peter Parker's life after the memory-wipe of No Way Home — a street-level reset before the multiverse peaks.",
       "point": "Re-centres Spider-Man for the new era and is expected to feed straight into the Avengers two-parter.",
