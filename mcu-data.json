@@ -641,7 +641,7 @@
     },
     {
       "id": "hawkeye",
-      "poster": "https://image.tmdb.org/t/p/w500/9bWHQS1AZbB7vYUCZqk3SvoWWjJ.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/ct5pNE5dDHryHLDnxyZPYcqO1sz.jpg",
       "title": "Hawkeye",
       "release": 2021,
       "chrono": 2024,
@@ -1173,7 +1173,7 @@
     {
       "id": "spider-man-3",
       "tmdbId": 559,
-      "poster": "https://image.tmdb.org/t/p/w500/sJMTTGjtjvrMZ7G0oP9D13wNUum.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/qFmwhVUoUSXjkKRmca5yGDEXBIj.jpg",
       "title": "Spider-Man 3",
       "release": 2007,
       "releaseDate": "2007-05-01",
@@ -1394,7 +1394,7 @@
       "id": "eternals",
       "title": "Eternals",
       "release": 2021,
-      "releaseDate": "2021-11-05",
+      "releaseDate": "2021-11-03",
       "chrono": 2023.5,
       "chronoLabel": "2023 · post-Blip reveal",
       "phase": 4,
@@ -1406,8 +1406,11 @@
       "universeLabel": "MCU",
       "focus": "Ten immortal Celestial-made guardians reveal themselves after millennia hiding on Earth. Watch for Arishem, the Celestials, and the cosmic scale this adds above the Infinity Stones.",
       "point": "Widens the cosmology way past Earth — Celestials, Deviants, and the idea that Earth itself was seeded for a purpose — mythology later stories draw on.",
-      "overview": "The Eternals are a race of immortal beings who lived on Earth and shaped its history and civilizations for thousands of years, who reunite to battle the evil Deviants.",
-      "poster": ""
+      "overview": "The Eternals are a team of ancient aliens who have been living on Earth in secret for thousands of years. When an unexpected tragedy forces them out of the shadows, they are forced to reunite against mankind’s most ancient enemy, the Deviants.",
+      "poster": "https://image.tmdb.org/t/p/w500/lFByFSLV5WDJEv3KabbdAF959F2.jpg",
+      "tmdbId": 524434,
+      "rating": 6.8,
+      "imdbId": "tt9032400"
     },
     {
       "id": "echo",
@@ -1425,8 +1428,11 @@
       "universeLabel": "MCU",
       "focus": "Maya Lopez returns home to Oklahoma to confront Kingpin and her Choctaw roots — the first MCU project billed as street-level, no-cape crime drama.",
       "point": "Closes out Hawkeye's Kingpin/Maya thread and quietly seeds Daredevil: Born Again's New York underworld.",
-      "overview": "Maya Lopez's ruthless past catches up with her, forcing her to reconnect with her Native American roots and face her family and community she left behind.",
-      "poster": ""
+      "overview": "Pursued by Wilson Fisk's criminal empire, Maya's journey brings her home and she must confront her own family and legacy.",
+      "poster": "https://image.tmdb.org/t/p/w500/vFyJH630cF68LohVYjQW49074Sy.jpg",
+      "tmdbId": 122226,
+      "rating": 6,
+      "imdbId": "tt13966962"
     },
     {
       "id": "moon-knight",
@@ -1444,14 +1450,17 @@
       "universeLabel": "MCU",
       "focus": "Steven Grant discovers he shares a body with mercenary Marc Spector, both hosts to the Egyptian moon god Khonshu. A largely standalone, mythology-driven detour.",
       "point": "Introduces Egyptian gods and Moon Knight to the MCU roster — self-contained for now, but the character (and a mid-credits third identity) is clearly built for more.",
-      "overview": "Steven Grant, a mild-mannered gift-shop employee, becomes plagued with blackouts and memories of another life. Steven discovers he has dissociative identity disorder and shares a body with mercenary Marc Spector.",
-      "poster": ""
+      "overview": "When Steven Grant, a mild-mannered gift-shop employee, becomes plagued with blackouts and memories of another life, he discovers he has dissociative identity disorder and shares a body with mercenary Marc Spector. As Steven/Marc’s enemies converge upon them, they must navigate their complex identities while thrust into a deadly mystery among the powerful gods of Egypt.",
+      "poster": "https://image.tmdb.org/t/p/w500/x6FsYvt33846IQnDSFxla9j0RX8.jpg",
+      "tmdbId": 92749,
+      "rating": 7.6,
+      "imdbId": "tt10234724"
     },
     {
       "id": "love-and-thunder",
       "title": "Thor: Love and Thunder",
       "release": 2022,
-      "releaseDate": "2022-07-08",
+      "releaseDate": "2022-07-06",
       "chrono": 2025.1,
       "chronoLabel": "2025",
       "phase": 4,
@@ -1463,8 +1472,11 @@
       "universeLabel": "MCU",
       "focus": "Jane Foster returns as the Mighty Thor, wielding a reforged Mjolnir, while Gorr the God Butcher hunts every god in existence. Watch Thor's arc toward fatherhood (Love, adopting Gorr's daughter).",
       "point": "Closes Thor and Jane's romance, retires classic Mjolnir-era Thor stakes, and hands him a new role (adoptive father) heading into the team-ups.",
-      "overview": "Thor enlists the help of Valkyrie, Korg and ex-girlfriend Jane Foster to fight Gorr the God Butcher, who intends to make the gods extinct.",
-      "poster": ""
+      "overview": "After his retirement is interrupted by Gorr the God Butcher, a galactic killer who seeks the extinction of the gods, Thor Odinson enlists the help of King Valkyrie, Korg, and ex-girlfriend Jane Foster, who now wields Mjolnir as the Mighty Thor. Together they embark upon a harrowing cosmic adventure to uncover the mystery of the God Butcher’s vengeance and stop him before it’s too late.",
+      "poster": "https://image.tmdb.org/t/p/w500/pIkRyD18kl4FhoCNQuWxWu5cBLM.jpg",
+      "tmdbId": 616037,
+      "rating": 6.4,
+      "imdbId": "tt10648342"
     },
     {
       "id": "she-hulk",
@@ -1482,14 +1494,17 @@
       "universeLabel": "MCU",
       "focus": "Jennifer Walters gets Hulk powers from a blood transfusion and tries to keep a normal legal career alongside them. Comedic, fourth-wall-aware tone — lighter stakes, but keeps the Hulk/Abomination/Wong threads moving.",
       "point": "Keeps Bruce Banner's corner of the MCU alive between films and folds Abomination and Wong into the wider social scene ahead of bigger team-ups.",
-      "overview": "Jennifer Walters navigates the complicated life of a single, 30-something attorney who also happens to be a green 6-foot-7-inch superpowered Hulk.",
-      "poster": ""
+      "overview": "Jennifer Walters navigates the complicated life of a single, 30-something attorney who also happens to be a green 6-foot-7-inch superpowered hulk.",
+      "poster": "https://image.tmdb.org/t/p/w500/5xz2orV8f0usyrfGNshcoXHmiaV.jpg",
+      "tmdbId": 92783,
+      "rating": 6.1,
+      "imdbId": "tt10857160"
     },
     {
       "id": "quantumania",
       "title": "Ant-Man and the Wasp: Quantumania",
       "release": 2023,
-      "releaseDate": "2023-02-17",
+      "releaseDate": "2023-02-15",
       "chrono": 2025.5,
       "chronoLabel": "2025/26",
       "phase": 5,
@@ -1501,8 +1516,11 @@
       "universeLabel": "MCU",
       "focus": "The Ant-Man family is pulled into the Quantum Realm and meets Kang the Conqueror in the flesh. This is the MCU's first real look at the saga's next big villain.",
       "point": "Formally introduces Kang as a physical threat (not just a variant hint), setting the stakes for the rest of the Multiverse Saga's endgame.",
-      "overview": "Scott Lang and Hope Van Dyne, along with Hank Pym and Janet Van Dyne, explore the Quantum Realm, where they interact with strange creatures and embark on an adventure that goes beyond the limits of what they thought possible.",
-      "poster": ""
+      "overview": "Super-Hero partners Scott Lang and Hope van Dyne, along with with Hope's parents Janet van Dyne and Hank Pym, and Scott's daughter Cassie Lang, find themselves exploring the Quantum Realm, interacting with strange new creatures and embarking on an adventure that will push them beyond the limits of what they thought possible.",
+      "poster": "https://image.tmdb.org/t/p/w500/qnqGbB22YJ7dSs4o6M7exTpNxPz.jpg",
+      "tmdbId": 640146,
+      "rating": 6.2,
+      "imdbId": "tt10954600"
     },
     {
       "id": "secret-invasion",
@@ -1520,14 +1538,17 @@
       "universeLabel": "MCU",
       "focus": "Nick Fury discovers a faction of shapeshifting Skrulls has been secretly infiltrating Earth's institutions for years. A paranoid espionage thriller — trust no one.",
       "point": "Pays off decades of background Skrull presence (since Captain Marvel) and repositions Fury for his reduced, more human role going forward.",
-      "overview": "Nick Fury discovers a faction of shapeshifting Skrulls has been secretly infiltrating Earth for years, causing him to embark on a global manhunt to prevent an all-out invasion.",
-      "poster": ""
+      "overview": "Nick Fury and Talos discover a faction of shapeshifting Skrulls who have been infiltrating Earth for years.",
+      "poster": "https://image.tmdb.org/t/p/w500/3rINdUPSy9AklJg74jWHOyUXuZd.jpg",
+      "tmdbId": 114472,
+      "rating": 6.4,
+      "imdbId": "tt13157618"
     },
     {
       "id": "gotg-vol-3",
       "title": "Guardians of the Galaxy Vol. 3",
       "release": 2023,
-      "releaseDate": "2023-05-05",
+      "releaseDate": "2023-05-03",
       "chrono": 2025.7,
       "chronoLabel": "2026",
       "phase": 5,
@@ -1539,14 +1560,17 @@
       "universeLabel": "MCU",
       "focus": "The Guardians' final ride together — Rocket's origin with the High Evolutionary takes center stage. Watch for who survives and who walks away.",
       "point": "Closes the Guardians trilogy and this line-up's story, resetting the team's roster for whatever cosmic MCU stories come next.",
-      "overview": "Still reeling from the loss of Gamora, Peter Quill rallies his team to defend the universe and one of their own—a mission that could mean the end of the Guardians if not successful.",
-      "poster": ""
+      "overview": "Peter Quill, still reeling from the loss of Gamora, must rally his team around him to defend the universe along with protecting one of their own. A mission that, if not completed successfully, could quite possibly lead to the end of the Guardians as we know them.",
+      "poster": "https://image.tmdb.org/t/p/w500/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg",
+      "tmdbId": 447365,
+      "rating": 7.9,
+      "imdbId": "tt6791350"
     },
     {
       "id": "the-marvels",
       "title": "The Marvels",
       "release": 2023,
-      "releaseDate": "2023-11-10",
+      "releaseDate": "2023-11-08",
       "chrono": 2025.9,
       "chronoLabel": "2026",
       "phase": 5,
@@ -1558,8 +1582,11 @@
       "universeLabel": "MCU",
       "focus": "Carol Danvers, Kamala Khan, and Monica Rambeau get their powers entangled and start swapping places. Direct sequel to both Captain Marvel and Ms. Marvel.",
       "point": "Merges the Captain Marvel and Ms. Marvel threads into one team and closes Monica Rambeau's WandaVision-era arc.",
-      "overview": "Carol Danvers gets her powers entangled with those of Kamala Khan and Monica Rambeau, forcing them to work together to save the universe.",
-      "poster": ""
+      "overview": "When her duties send her to an anomalous wormhole linked to a Kree revolutionary, Carol's powers become entangled with that of Jersey City super-fan Kamala Khan, aka Ms. Marvel, and Carol's estranged niece, now S.A.B.E.R. astronaut Captain Monica Rambeau. Together, this unlikely trio must team up and learn to work in concert to save the universe.",
+      "poster": "https://image.tmdb.org/t/p/w500/9GBhzXMFjgcZ3FdR9w3bUMMTps5.jpg",
+      "tmdbId": 609681,
+      "rating": 5.9,
+      "imdbId": "tt10676048"
     },
     {
       "id": "agatha-all-along",
@@ -1577,27 +1604,33 @@
       "universeLabel": "MCU",
       "focus": "WandaVision's Agatha Harkness, stripped of her powers, gathers a coven to walk the Witches' Road. A direct spin-off, witchy and self-contained.",
       "point": "Expands the MCU's magic corner post-Wanda and formally introduces Billy Maximoff as the (not yet Scarlet-Witch-aware) Young Avenger.",
-      "overview": "Following the events of WandaVision, the disgraced Witch embarks on the Witches' Road, a magical gauntlet rumored to grant power beyond imagination to any witch who survives it.",
-      "poster": ""
+      "overview": "Agatha Harkness gathers a coven of witches and sets off down, down, down The Witches' Road.",
+      "poster": "https://image.tmdb.org/t/p/w500/mGsxKwXUjojitRv2E9qMTbxbBRd.jpg",
+      "tmdbId": 138501,
+      "rating": 7.4,
+      "imdbId": "tt15571732"
     },
     {
       "id": "brave-new-world",
       "title": "Captain America: Brave New World",
       "release": 2025,
-      "releaseDate": "2025-02-14",
+      "releaseDate": "2025-02-12",
       "chrono": 2026.8,
       "chronoLabel": "2027",
       "phase": 5,
       "saga": "Multiverse Saga",
       "type": "film",
-      "meta": "118 min",
+      "meta": "119 min",
       "tint": "#7a1f2b",
       "universe": "Marvel Cinematic Universe",
       "universeLabel": "MCU",
       "focus": "Sam Wilson's first outing as the new Captain America, opposite newly-elected President Thaddeus Ross — who has his own gamma-powered secret. Watch the Ross/Hulk thread.",
       "point": "Confirms Sam as the mantle-holder going forward and pays off Ross's Hulk history right before the team-up films need him.",
-      "overview": "Sam Wilson, the new Captain America, finds himself in the middle of an international incident and must discover the motive behind a sinister global plot before its mastermind can unleash chaos.",
-      "poster": ""
+      "overview": "After meeting with newly elected U.S. President Thaddeus Ross, Sam finds himself in the middle of an international incident. He must discover the reason behind a nefarious global plot before the true mastermind has the entire world seeing red.",
+      "poster": "https://image.tmdb.org/t/p/w500/pzIddUEMWhWzfvLI3TwxUG2wGoi.jpg",
+      "tmdbId": 822119,
+      "rating": 6,
+      "imdbId": "tt14513804"
     },
     {
       "id": "daredevil-born-again",
@@ -1609,14 +1642,17 @@
       "phase": 5,
       "saga": "Multiverse Saga",
       "type": "series",
-      "meta": "9 episodes",
+      "meta": "17 episodes",
       "tint": "#a11d1d",
       "universe": "Marvel Cinematic Universe",
       "universeLabel": "MCU",
       "focus": "Matt Murdock vs. Wilson Fisk — now New York's mayor — in a street-level cat-and-mouse continuing straight out of the Netflix Daredevil continuity, now folded into MCU canon.",
       "point": "Officially brings Daredevil and Kingpin's Netflix-era stories into MCU canon and gives the Multiverse Saga its most grounded corner.",
-      "overview": "Matt Murdock, a blind lawyer with heightened senses and a dark vigilante past, finds himself on a collision course with Wilson Fisk, New York's newly elected mayor.",
-      "poster": ""
+      "overview": "Matt Murdock, a blind lawyer with heightened abilities, is fighting for justice through his bustling law firm, while former mob boss Wilson Fisk pursues his own political endeavors in New York. When their past identities begin to emerge, both men find themselves on an inevitable collision course.",
+      "poster": "https://image.tmdb.org/t/p/w500/xDUoAsU8lQHOOoRkFiBuarmACDN.jpg",
+      "tmdbId": 202555,
+      "rating": 8.2,
+      "imdbId": "tt18923754"
     },
     {
       "id": "ironheart",
@@ -1634,8 +1670,11 @@
       "universeLabel": "MCU",
       "focus": "MIT genius Riri Williams, fresh off No Way Home, builds her own suit and gets tangled up with the magic-slinging trickster The Hood in Chicago.",
       "point": "Establishes Riri Williams as a standalone tech-hero and is the MCU's first real dive into street-level magic-versus-tech crime.",
-      "overview": "A young genius inventor, Riri Williams, is determined to make her mark on the world by attending the Massachusetts Institute of Technology, where a run-in with the mysterious Hood puts her genius to the test.",
-      "poster": ""
+      "overview": "After the events of Black Panther: Wakanda Forever, technology is pitted against magic when Riri Williams, a young, genius inventor determined to make her mark on the world, returns to her hometown of Chicago. Her unique take on building iron suits is brilliant, but in pursuit of her ambitions, she finds herself wrapped up with the mysterious yet charming Parker Robbins aka \"The Hood.\"",
+      "poster": "https://image.tmdb.org/t/p/w500/dOh6MJpdlQhYpLBhzhNQeYGKTZ5.jpg",
+      "tmdbId": 114471,
+      "rating": 5.3,
+      "imdbId": "tt13623126"
     }
   ],
   "universes": [
