@@ -48,29 +48,6 @@
   .ring .pct{font-family:var(--comic);font-size:14px;letter-spacing:.5px;white-space:nowrap}
   .reset{font-family:var(--comic);font-size:12.5px;border:2.5px solid var(--ink);background:#fff;padding:4px 10px;border-radius:7px;cursor:pointer;box-shadow:2px 2px 0 var(--ink)}
 
-  /* ---------- doomsday spotlight ---------- */
-  #doomsdaySpotlight{flex:none;background:var(--ink);border-bottom:3px solid var(--ink);box-shadow:0 4px 0 rgba(0,0,0,.22)}
-  .dd-head{display:flex;align-items:baseline;gap:10px;padding:12px 20px 8px;flex-wrap:wrap}
-  .dd-eyebrow{font-family:var(--comic);font-size:11.5px;letter-spacing:1px;color:var(--ink);background:var(--yellow);
-    border:2.5px solid var(--ink);border-radius:6px;padding:3px 9px;box-shadow:2px 2px 0 rgba(0,0,0,.4)}
-  .dd-title{font-family:var(--comic);font-weight:400;font-size:19px;color:#fff;letter-spacing:1px;margin:0;
-    -webkit-text-stroke:.4px var(--ink);text-shadow:2px 2px 0 var(--red)}
-  .dd-sub{font-size:11.5px;color:#c9c9d6;font-weight:600}
-  .dd-strip{display:flex;gap:16px;overflow-x:auto;overflow-y:hidden;padding:2px 20px 16px}
-  .dd-strip::-webkit-scrollbar{height:10px}
-  .dd-strip::-webkit-scrollbar-track{background:rgba(255,255,255,.08)}
-  .dd-strip::-webkit-scrollbar-thumb{background:var(--yellow);border-radius:99px;border:2px solid var(--ink)}
-  .dd-strip .card{width:180px;flex:none}
-  .dd-strip .ptop{flex-direction:column}
-  .dd-strip .poster{width:100%;height:130px;border-right:0;border-bottom:4px solid var(--ink)}
-  .dd-strip .pinfo{padding:9px 10px 8px}
-  .dd-strip .card h3{font-size:15px;margin:1px 0 5px;-webkit-line-clamp:2;display:-webkit-box;-webkit-box-orient:vertical;overflow:hidden}
-  .dd-strip .focus{display:none}
-  .dd-strip .foot{padding:8px 10px}
-  .dd-strip .meta{display:none}
-  .dd-strip .watchbtn{font-size:12.5px;padding:4px 9px;width:100%}
-  .dd-strip .num{width:28px;height:28px;font-size:13px}
-
   /* ---------- scroll shell ---------- */
   #app{flex:1;min-height:0}
   body.view-grid #app{overflow-y:auto;overflow-x:hidden}
@@ -211,15 +188,6 @@
     <button class="reset" id="resetBtn">Reset</button>
   </header>
 
-  <section id="doomsdaySpotlight">
-    <div class="dd-head">
-      <span class="dd-eyebrow">★ OFFICIAL WATCHLIST</span>
-      <h2 class="dd-title">Watch Before Doomsday</h2>
-      <span class="dd-sub">Disney's own pre-<i>Avengers: Doomsday</i> viewing order</span>
-    </div>
-    <div class="dd-strip" id="doomsdayShelf"></div>
-  </section>
-
   <main id="app"><div class="loading">Loading the multiverse…</div></main>
 </div>
 
@@ -280,20 +248,34 @@ function cardInner(t,s,isNext){
     </div>
     <div class="foot">${foot}</div>`;
 }
-function firstUnseen(list){
+function doomsdaySection(list){
+  const ids=MCU.doomsdayWatchlist||[];
+  const items=ids.map(id=>list.find(t=>t.id===id)).filter(Boolean);
+  return items.length?{label:'★ Watch Before Doomsday',items}:null;
+}
+function sections(list){
+  const secs=[];
+  const dd=doomsdaySection(list);
+  if(dd)secs.push(dd);
   for(const u of MCU.universes){
     const items=sortItems(list.filter(t=>t.universe===u));
+    if(items.length)secs.push({label:u,items});
+  }
+  return secs;
+}
+function firstUnseen(list){
+  for(const {items} of sections(list)){
     for(const t of items) if(!isUpcoming(t)&&!isSeen(t.id)) return t.id;
   }
   return null;
 }
 function renderGrid(list,nextId){
+  const secs=sections(list);
+  if(!secs.length)return null;
   const wrap=document.createElement('div');wrap.className='gridwrap';
-  let n=0, any=false;
-  for(const u of MCU.universes){
-    const items=sortItems(list.filter(t=>t.universe===u));
-    if(!items.length)continue; any=true;
-    const head=document.createElement('div');head.className='saga';head.innerHTML=`<h2>${u}</h2>`;wrap.appendChild(head);
+  let n=0;
+  for(const {label,items} of secs){
+    const head=document.createElement('div');head.className='saga';head.innerHTML=`<h2>${label}</h2>`;wrap.appendChild(head);
     const grid=document.createElement('div');grid.className='grid';
     for(const t of items){
       n++;const s=isSeen(t.id);const up=isUpcoming(t);const isNext=!up&&t.id===nextId;
@@ -303,15 +285,15 @@ function renderGrid(list,nextId){
     }
     wrap.appendChild(grid);
   }
-  return any?wrap:null;
+  return wrap;
 }
 function renderTimeline(list,nextId){
+  const secs=sections(list);
+  if(!secs.length)return null;
   const track=document.createElement('div');track.className='track';
-  let n=0, side=0, any=false;
-  for(const u of MCU.universes){
-    const items=sortItems(list.filter(t=>t.universe===u));
-    if(!items.length)continue; any=true;
-    const sep=document.createElement('div');sep.className='saga-sep';sep.innerHTML=`<span>${u}</span>`;track.appendChild(sep);
+  let n=0, side=0;
+  for(const {label,items} of secs){
+    const sep=document.createElement('div');sep.className='saga-sep';sep.innerHTML=`<span>${label}</span>`;track.appendChild(sep);
     for(const t of items){
       n++;const s=isSeen(t.id);const up=isUpcoming(t);const isNext=!up&&t.id===nextId;
       const item=document.createElement('div');item.className='item '+(side%2===0?'up':'down');side++;
@@ -320,7 +302,7 @@ function renderTimeline(list,nextId){
       track.appendChild(item);
     }
   }
-  return any?track:null;
+  return track;
 }
 function scrollToNext(){
   const app=$('#app');const card=app.querySelector('.card.next');if(!card)return;
@@ -335,24 +317,7 @@ function scrollToNext(){
     }
   });
 }
-function renderDoomsday(){
-  const shelf=$('#doomsdayShelf');
-  const ids=MCU.doomsdayWatchlist||[];
-  shelf.innerHTML='';
-  ids.forEach((id,i)=>{
-    const t=MCU.titles.find(x=>x.id===id);
-    if(!t)return;
-    const s=isSeen(t.id);
-    const card=document.createElement('article');
-    card.className=`card ${s?'is-seen ':''}`;card.dataset.id=t.id;
-    card.innerHTML=`<div class="num">${i+1}</div>`+cardInner(t,s,false);
-    shelf.appendChild(card);
-  });
-  shelf.querySelectorAll('[data-seen]').forEach(b=>b.addEventListener('click',e=>{e.stopPropagation();toggleSeen(b.dataset.seen);}));
-  shelf.querySelectorAll('.card').forEach(c=>c.addEventListener('click',()=>openModal(c.dataset.id)));
-}
 function render(scroll){
-  renderDoomsday();
   const app=$('#app');app.innerHTML='';
   const list=visible();
   const released=MCU.titles.filter(t=>!isUpcoming(t));
