@@ -89,5 +89,8 @@ state. Keep that pattern when extending the UI rather than introducing increment
 ## Deployment
 
 Static site on Vercel — no build command, output dir is the project root (see `.vercelignore`,
-which excludes `refresh-data.mjs` and `.idea` from the deploy). Pushing to `main` (including the
-daily automated data-refresh commit) triggers a production deploy.
+which excludes `refresh-data.mjs` and `.idea` from the deploy). **There is no git integration** —
+pushing to `main` (including the daily automated `chore: refresh TMDB data` commit) does **not**
+trigger a deploy by itself. Production deploys are manual: `vercel --prod` (project is linked via
+`vercel link --yes --project mcu-timeline`). After a data-only change lands via the GitHub Action,
+`git pull` locally and run `vercel --prod` to actually ship it.

@@ -2,7 +2,9 @@ name: Refresh MCU data
 
 # Pulls fresh data from TMDB (posters, ratings, runtimes, release dates,
 # IMDb ids, synopses) into mcu-data.json once a day. If anything changed,
-# it commits the update — which triggers the Vercel production deploy.
+# it commits the update. NOTE: this repo has no Vercel git integration, so
+# the commit alone does NOT deploy — pull it locally and run `vercel --prod`
+# to actually ship the refreshed data.
 # Needs a repo secret: TMDB_API_KEY
 
 on:
