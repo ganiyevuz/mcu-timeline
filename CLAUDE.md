@@ -94,3 +94,11 @@ pushing to `main` (including the daily automated `chore: refresh TMDB data` comm
 trigger a deploy by itself. Production deploys are manual: `vercel --prod` (project is linked via
 `vercel link --yes --project mcu-timeline`). After a data-only change lands via the GitHub Action,
 `git pull` locally and run `vercel --prod` to actually ship it.
+
+`vercel --prod` auto-updates the project's default aliases (`mcu-kappa.vercel.app` and the
+`mcu-timeline-*-ganiyevuzs-projects.vercel.app` ones), but **`mcu-timeline-app.vercel.app` is a
+separate, manually-set alias** — `vercel domains ls` shows it isn't a registered project domain, so
+it does NOT follow new deploys automatically and goes stale. After every `vercel --prod`, also run:
+```bash
+vercel alias set mcu-kappa.vercel.app mcu-timeline-app.vercel.app
+```
